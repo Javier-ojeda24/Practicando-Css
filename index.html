@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practicando Css</title>
+    <title>AppDeGatos</title>
   </head>
   <body>
     <h2>AppDeGatos</h2>
@@ -25,27 +25,88 @@
       <a href="#"> <img src="./img/gato.jpg" alt="gato" /></a>
       <hr />
       <h3>Lista de Gatos</h3>
-      <p>Cosas que los gatos <em> aman</em>:</p>
-      <ul>
-        <li>Menta gatuna</li>
-        <li>Apuntadores Láser</li>
-        <li><s>Lazaña</s></li>
-      </ul>
+      <div>
+        <p>Cosas que los gatos <em> aman</em>:</p>
+        <ul>
+          <li>Menta gatuna</li>
+          <li>Apuntadores Láser</li>
+          <li><s>Lazaña</s></li>
+        </ul>
+      </div>
       <img src="./img/lazaña.jpg" alt="Lazaña" />
-      <p>Cosas que los gatos <strong> odian</strong>:</p>
-      <ol>
-        <li>Tratamientos antipulgas</li>
-        <li>Truenos</li>
-        <li>Otros gatos</li>
-      </ol>
+      <div>
+        <p>Cosas que los gatos <strong> odian</strong>:</p>
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
       <img
         src="https://www.feelcats.com/wp-content/uploads/2018/11/gatos-asilvestrados.jpg"
         alt="Gatos en grupo "
       />
       <form action="/enviar-repuesta">
-        <input type="text" placeholder="URL de la foto de tu gato" />
+        <!--Botones de Radio-->
+
+        <label for="interior">
+          <input
+            value="interior"
+            id="interior"
+            type="radio"
+            name="interior-exterior"
+          />Interiores</label
+        >
+        <br />
+        <label for="exterior">
+          <input
+            checked
+            id="exterior"
+            type="radio"
+            name="interior-exterior"
+            value="exterior"
+          />Exteriores
+        </label>
+        <br />
+
+        <!-- Casillas de Verificacion -->
+        <label for="cariñoso">
+          <input
+            value="cariñoso"
+            type="checkbox"
+            name="personalidad"
+            id="cariñoso"
+            checked
+          />Cariñoso</label
+        >
+        <br />
+        <label for="energico">
+          <input
+            value="energico"
+            type="checkbox"
+            name="personalidad"
+            id="energico"
+          />Energicó</label
+        >
+        <br />
+        <label for="perezoso">
+          <input
+            type="checkbox"
+            value="perezoso"
+            name="personalidad"
+            id="perezoso"
+          />Perezoso</label
+        >
+        <br />
+        <!--Texto y Bóton de Enviar-->
+
+        <input required type="text" placeholder="URL de la foto de tu gato" />
+        <br />
         <button type="submit">Enviar</button>
       </form>
     </main>
+    <footer>
+      <p><small>Sin derechos de Autor - JavierOjeda.com </small></p>
+    </footer>
   </body>
 </html>
