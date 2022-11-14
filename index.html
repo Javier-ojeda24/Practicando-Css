@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppDeGatos</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h2>AppDeGatos</h2>
+    <h2 id="titulo">AppDeGatos</h2>
     <main>
       <h3>Imágenes de Gatos</h3>
       <p>
         Haz click aqui para ver más
         <a href="#">imágenes de gatos.</a>
       </p>
-
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
         repellendus doloribus expedita suscipit, illum ad fuga adipisci omnis
@@ -22,12 +28,12 @@
         cumque quasi!
       </p>
       <!--Comentario-->
-      <a href="#"> <img src="./img/gato.jpg" alt="gato" /></a>
       <hr />
       <h3>Lista de Gatos</h3>
       <div>
+        <a href="#"> <img src="./img/gato.jpg" alt="gato" /></a>
         <p>Cosas que los gatos <em> aman</em>:</p>
-        <ul>
+        <ul id="gatos-aman">
           <li>Menta gatuna</li>
           <li>Apuntadores Láser</li>
           <li><s>Lazaña</s></li>
@@ -36,16 +42,17 @@
       <img src="./img/lazaña.jpg" alt="Lazaña" />
       <div>
         <p>Cosas que los gatos <strong> odian</strong>:</p>
-        <ol>
+        <ol id="gatos-odian">
           <li>Tratamientos antipulgas</li>
           <li>Truenos</li>
           <li>Otros gatos</li>
         </ol>
+        <img
+          id="gatitos"
+          src="https://www.feelcats.com/wp-content/uploads/2018/11/gatos-asilvestrados.jpg"
+          alt="Gatos en grupo "
+        />
       </div>
-      <img
-        src="https://www.feelcats.com/wp-content/uploads/2018/11/gatos-asilvestrados.jpg"
-        alt="Gatos en grupo "
-      />
       <form action="/enviar-repuesta">
         <!--Botones de Radio-->
 
